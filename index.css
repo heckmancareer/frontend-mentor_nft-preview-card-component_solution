@@ -1,0 +1,101 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan-value: hsl(178, 100%, 50%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white-value: hsl(0, 0%, 100%);
+}
+
+body {
+    min-width: 375px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    background-color: var(--very-dark-blue-main-bg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--very-dark-blue-card-bg);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.card div {
+    margin-bottom: 15px;
+}
+
+.card-inner-image {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-inner-title {
+    color: var(--white-value);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card-inner-text {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.card-inner-descriptors {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-inner-descriptors-etherium-value {
+    color: var(--cyan-value);
+}
+
+.card-inner-descriptors-time-duration {
+    color: var(--soft-blue);
+}
+
+.card-inner-line-break {
+    border: 0 solid var(--soft-blue);
+    border-top-width: 1px;
+}
+
+.card-inner-author-line {
+    display: flex;
+    align-items: center;
+}
+
+.card-inner-author-line-author-picture {
+    width: 40px;
+    border: 1px solid var(--white-value);
+    border-radius: 50%;
+}
+
+.card-inner-author-line-author-text {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.white-author-text {
+    color: var(--white-value);
+}
+
+.master-flex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1400px) {
+
+}
